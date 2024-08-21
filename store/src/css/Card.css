@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap');
+
+.card{
+    width: 100%;
+    padding: 20px;
+    border: solid 1px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    background-color: #C4B49B;
+    text-align: center;
+}
+
+.card p{
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card span{
+    font-size: 20px;
+}
+
+.card img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.card .addToCard, .card .removeDish{
+    width: 50px;
+    height: 50px;
+    color: #C4B49B;
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 40px;
+    line-height: 38px;
+    text-align: center;
+
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: all 1s ease;
+}
+
+.card .addToCard{
+    background-color: #e27b0c;
+}
+
+.card .removeDish{
+    background-color: #e2300c;
+}
+
+.card div:hover{
+    color: #749F4E;
+    font-size: 60px;
+}

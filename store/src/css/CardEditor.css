@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap');
+
+.cardEditor{
+    width: 100%;
+    padding: 20px;
+    border: solid 1px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    background-color: #C4B49B;
+    text-align: center;
+}
+
+.cardEditor p{
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.cardEditor span{
+    font-size: 20px;
+}
+
+.cardEditor .imgPreview{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.cardEditor .applyBtn{
+    width: 50px;
+    height: 50px;
+    color: #C4B49B;
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: all 1s ease;
+
+    background-color: #749F4E;
+}
+
+.cardEditor .applyBtn:hover{
+    color: #e27b0c;
+}
+
+input[type="file"]{
+    margin-bottom: 20px;
+}

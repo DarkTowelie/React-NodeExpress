@@ -1,0 +1,90 @@
+.formWrapper{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.formWrapper .log-reg{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 5px white;
+    background-color: #C4B49B;
+    border: solid 2px #e27b0c;
+}
+
+.log-reg input{
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.log-reg :last-child{
+    margin-bottom: 0px;
+}
+
+.log-reg input, .log-reg input::placeholder{
+    font-size: 20px;
+}
+
+.log-reg input:focus{
+    outline: solid 2px #749F4E;
+}
+
+.log-reg input[type="submit"]{
+    cursor: pointer;
+    color: #32261e;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #749f4eae;
+    box-shadow: 2px 2px 4px rgb(0, 63, 41), -2px -2px 4px rgb(0, 63, 41);
+}
+
+.log-reg input[type="submit"]:hover{
+    background-color: #749F4E;
+}
+
+.formWrapper a{
+    color: #e27b0c;
+    font-size: 20px;
+}
+
+.formWrapper span{
+    color: #32261e;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.formWrapper .googleLogin{
+    width: 90%;
+    padding: 15px;
+    background-color: white;
+    transition: all 1s ease;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.formWrapper .googleLogin img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    transition: background-color 1s ease;
+}
+
+.formWrapper .googleLogin span{
+    margin: auto;
+}
+
+.formWrapper .googleLogin:hover{
+    background-color: #4180EF;
+}
+
+.formWrapper .googleLogin:hover img{
+    background-color: white;
+}

@@ -1,0 +1,109 @@
+[
+ {
+  "id": "78f39e3e-74d9-44c6-9678-699c2aaadcce",
+  "title": "Борщ",
+  "img": "https://i.ibb.co/0CGkv8s/1.png",
+  "desc": "Вес: 200 г",
+  "price": 150,
+  "category": "Первые блюда",
+  "days": [
+   1
+  ]
+ },
+ {
+  "id": "17422e8f-a1b4-46cd-8a9c-be9b64902e09",
+  "title": "Салат 'Цезарь'",
+  "img": "https://i.ibb.co/fHvBRGk/2.png",
+  "desc": "Вес: 150 г",
+  "price": 250,
+  "category": "Вторые блюда",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ]
+ },
+ {
+  "id": "9279c17f-b337-4ba6-9a96-5c1cece091ab",
+  "title": "Молочный шоколад 'Алёнка'",
+  "img": "https://i.ibb.co/3k0zsJ7/3.png",
+  "desc": "Вес: 100 г",
+  "price": 75,
+  "category": "Десерты",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   0
+  ]
+ },
+ {
+  "id": "6764a9dd-2ce9-44f1-9aed-8d0b83e43a5c",
+  "title": "Апельсиновый сок",
+  "img": "https://i.ibb.co/tcb2Fk8/4.png",
+  "desc": "Объем: 250 мл",
+  "price": 120,
+  "category": "Десерты",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   0
+  ]
+ },
+ {
+  "id": "f29b3b2c-9d0a-44f7-bc81-d71aeecd5a64",
+  "title": "Зеленый чай",
+  "img": "https://i.ibb.co/X5tFnrv/5.png",
+  "desc": "Объем: 250 мл",
+  "price": 35,
+  "category": "Десерты",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   0
+  ]
+ },
+ {
+  "id": "ff25b0d1-aaf7-4fa8-9cbf-ebb9450d4afc",
+  "title": "Пицца с оливками",
+  "img": "https://i.ibb.co/1mWjh7t/6.png",
+  "desc": "Вес: 200 г",
+  "price": 400,
+  "category": "Десерты",
+  "days": [
+   6,
+   0
+  ]
+ },
+ {
+  "title": "wefwe",
+  "price": "123",
+  "desc": "123",
+  "img": "https://i.ibb.co/J7XWRmn/66-png.png",
+  "category": "Новое блюдо",
+  "id": "0522d402-1fba-46a2-aab7-a8a05c631291",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   0
+  ]
+ }
+]

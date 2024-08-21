@@ -1,0 +1,47 @@
+.cartCard{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    background-color: #DDD4C9;
+    border: solid 2px #32261e;
+    border-bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cartCard img{
+    height: 100%;
+}
+
+.cartCard p, .cartCard span{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.cartCard .removeFromCard{
+    width: 25px;
+    height: 25px;
+    background-color: #e27b0c;
+    color: #C4B49B;
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 30px;
+    line-height: 18px;
+    text-align: center;
+
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.cartCard .removeFromCard:hover{
+    color: red;
+}

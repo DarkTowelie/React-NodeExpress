@@ -1,0 +1,23 @@
+# dependencies
+/store/node_modules
+/store/.pnp
+/store.pnp.js
+
+# testing
+/store/coverage
+
+# production
+/store/build
+
+# misc
+/store/.DS_Store
+/store/.env.local
+/store/.env.development.local
+/store/.env.test.local
+/store/.env.production.local
+
+/store/npm-debug.log*
+/store/yarn-debug.log*
+/store/yarn-error.log*
+
+/store-back/node_modules

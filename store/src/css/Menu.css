@@ -1,0 +1,79 @@
+.cardsCont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 25px;
+    padding: 25px;
+}
+
+.calendarPopup{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeBtn{
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    color: whitesmoke;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.filter{
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.filter span{
+    margin-right: 10px;
+    color: #e27b0c;
+    font-size: 20px;
+}
+
+.calendarBtn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url("../img/kalendar.png");
+    background-size: cover;
+}
+
+@media (max-width: 850px){
+    .cardsCont{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+
+@media (max-width: 600px){
+    .filter{
+        flex-direction: column;
+    }
+
+    .filter .priceFilter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 560px){
+    .cardsCont{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+}

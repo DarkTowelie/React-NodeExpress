@@ -1,0 +1,207 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    position: relative;
+    background-image: url('../img/wood-texture.jpg');
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .title{
+    color: #e27b0c;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+header nav .navigList{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+header nav .navigList li a{
+    font-weight: 300;
+
+    text-decoration: none;
+    margin-right: 15px;
+    color: #e27b0c;
+    font-size: 20px;
+    transition: 1s all ease;
+}
+
+header nav .navigList li a:hover,
+header nav .cartButton:hover
+{
+    color: #749F4E;
+}
+
+header nav .cartButton, .cartButtonActive{
+    font-size: 30px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+header nav .cartButton{
+    color: #e27b0c;
+}
+
+header nav .cartButtonActive{
+    color: #749F4E;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header .cartCont{
+    position: absolute;
+    width: 600px;
+    top: 70px;
+    right: 0px;
+    z-index: 9998;
+    background-color: #C4B49B;
+    min-height: 100px;
+
+    box-shadow: -5px 5px 3px 0px rgba(0,0,0,0.3);
+}
+
+header .cartCont .emptyMsg{
+    display: block;
+    width: 100%;
+    line-height: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+header .priceSum{
+    text-align: center;
+    border: solid 2px #32261e;
+}
+
+.userInfo{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C4B49B;
+    position: absolute;
+    z-index: 9999;
+    right: 0px;
+
+    border-radius: 15px;
+    box-shadow: -5px 5px 3px 0px rgba(0,0,0,0.3);
+}
+
+.userInfo a{
+    margin-right: 0;
+}
+
+header .userIco, header .mobileUserIco{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 2px black;
+    cursor: pointer;
+    background-color: #C4B49B;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+    color: #32261e;
+}
+
+header .mobileUserIco{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+header nav .burgerCont{
+    display: none;
+}
+
+header nav .burgerCont .burger{
+    width: 50px;
+    height: 50px;
+}
+
+header nav .burgerCont .mobileInfo{
+    position: absolute;
+    z-index: 2;
+    top: 104px;
+    right: 0px;
+    width: 450px;
+    padding: 25px;
+    background-color: #32261e;
+    display: flex;
+    color: #e27b0c;
+    font-size: 20px;
+}
+
+header nav .burgerCont .mobileInfo ul{
+    list-style: none;
+}
+
+header nav .burgerCont .mobileInfo a{
+    color: #e27b0c;
+    text-decoration: none;
+}
+
+header nav .burgerCont .mobileUser{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+header nav .burgerCont .mobileNavig{
+    padding-right: 20px;
+    border-right: 2px solid rgba(239, 251, 255, 0.32);
+}
+
+@media (max-width: 600px){
+    header .cartCont{
+        width: 100%;
+    }
+
+    header .cartCont img{
+        margin-right: 25px;
+    }
+
+    header nav .navigList{
+        display: none;
+    }
+
+    header nav .burgerCont{
+        display: block;
+    }
+}
+
+@media (max-width: 450px){
+    header nav .burgerCont .mobileInfo{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header nav .burgerCont .mobileUser{
+        padding-top: 10px;
+        padding-left: 0px;
+        border-top: 2px solid rgba(239, 251, 255, 0.32);
+    }
+
+    header nav .burgerCont .mobileNavig{
+        margin-bottom: 10px;
+        padding-right: 0px;
+        border-right: 0px solid rgba(239, 251, 255, 0.32);
+    }
+}
