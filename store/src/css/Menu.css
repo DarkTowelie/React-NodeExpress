@@ -36,6 +36,14 @@
     justify-content: right;
 }
 
+.filter .numInp{
+    width: 100px;
+}
+
+.filter select{
+    margin-right: 15px;
+}
+
 .filter span{
     margin-right: 10px;
     color: #e27b0c;

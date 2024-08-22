@@ -7,6 +7,9 @@ import 'react-calendar/dist/Calendar.css'
 import NumericInput from 'react-numeric-input'
 
 export default function Menu(props) {
+  let [categ, setCateg] = useState([])
+  let [currentCateg, setCurrentCateg] = useState("")
+
   let [date, setDate] = useState(new Date())
   let [price, setPrice] = useState(1000);
   let [dishes, setDishes] = useState(props.dishes)
@@ -19,7 +22,7 @@ export default function Menu(props) {
       {
         "id": "f29b3b2c-9d0a-44f7-bc81-d71aeecd5a64",
         "title": "Неизвестный товар",
-        "img": "https://i.ibb.co/DWpPYs0/notimages.png",
+        "img": "",
         "desc": "???",
         "price": 0,
         "category": "???",
@@ -57,12 +60,23 @@ export default function Menu(props) {
     updateDishes()
   }
 
+  fetch("http://localhost:4444/categories").
+  then(res => res.json()).
+  then(obj => {
+    let categs = obj["categories"]
+    categ.length === 0 && setCateg(categs) || setCurrentCateg(categs[0]) 
+  })
+
   return (
     <div className='menu'>
       <div className='filter'>
         <div className='priceFilter'>
+          <span>Категория:</span>
+          <select name="select" onChange={e=>{console.log(e.target.value)}}>
+            {categ.map(el => (<option key={el} value={el}>{el}</option>))}
+          </select>
           <span>Максимальная цена:</span>
-          <NumericInput min={0} max={1000} value={price} onChange={setPrice}/>
+          <NumericInput className='numInp' min={0} max={1000} value={price} onChange={setPrice}/>
         </div>
         <div onClick={()=>{setPopupActive(true)}} className='calendarBtn'></div>
       </div>
@@ -75,7 +89,7 @@ export default function Menu(props) {
               date={date} price={price}/>
             ))
           }
-          {props.isEdit && <CardEditor updateDishes={updateDishes}/>}
+          {props.isEdit && <CardEditor updateDishes={updateDishes} categ={categ}/>}
       </div>
     </div>
   )

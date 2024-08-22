@@ -1,5 +1,6 @@
 import '../css/CardEditor.css'
 import React, {useState} from 'react'
+import emptyLogo from '../img/notimages.png';
 
 export default function CardCreator(props) {
   const [img, setImg] = useState(undefined)
@@ -41,7 +42,13 @@ export default function CardCreator(props) {
 
   return (
     <div className='cardEditor'>
-        <img src={imgUrl} className='imgPreview'/>
+        {
+          
+          imgUrl === undefined ? 
+            <img src={emptyLogo} className='imgPreview'/> :
+            <img src={imgUrl} className='imgPreview'/>
+        }
+        
         <input className='editorInput' type="file" onChange={(e)=>{
             const file = e.target.files[0];
             setImg(file ? file : undefined);
@@ -58,6 +65,10 @@ export default function CardCreator(props) {
         <input placeholder='цена' className='editorInput'
                value={price} onChange={(e)=>{setPrice(e.target.value)}}
         />
+
+        <select name="select">
+           {props.categ.map(el => (<option key={el} value={el}>{el}</option>))}
+        </select>
 
         <div className='applyBtn' onClick={sendDishToServer}>
             &#10004;

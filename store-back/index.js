@@ -28,6 +28,20 @@ function isAdmin(users, user){
     return false;
 }
 
+app.get("/categories", (req, res)=>{
+  let categories = [
+    "Первые блюда",
+    "Горячие закуски",
+    "Детское меню",
+    "Напитки"
+  ]
+
+  let resObj = {
+    "categories" : categories
+  }
+  res.send(resObj);
+})
+
 app.get("/dishes", (req, res) => {
   fs.readFile("data/dishes.json", function(error,data){
     if(error) {
