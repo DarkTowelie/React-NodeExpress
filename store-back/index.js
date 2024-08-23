@@ -9,8 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 function userExist(users, user){
-  for(let u of users)
-  {
+  for(let u of users){
     if(u.email === user.email){
       return true;
     }
@@ -19,13 +18,12 @@ function userExist(users, user){
 }
 
 function isAdmin(users, user){
-  for(let u of users)
-    {
-      if(u.email === user.email){
-        return u.isAdmin;
-      }
+  for(let u of users){
+    if(u.email === user.email){
+      return u.isAdmin;
     }
-    return false;
+   }
+  return false;
 }
 
 app.get("/categories", (req, res)=>{
@@ -35,11 +33,8 @@ app.get("/categories", (req, res)=>{
     "Детское меню",
     "Напитки"
   ]
-
-  let resObj = {
-    "categories" : categories
-  }
-  res.send(resObj);
+  
+  res.send({"categories" : categories});
 })
 
 app.get("/dishes", (req, res) => {
